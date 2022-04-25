@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 80px;
+    background: url('bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.container .content .title{
+    font-size: 55px;
+    color: #236cAD;
+    font-family: 'Architects Daughter', cursive;
+}
+
+
+.container .content .description{
+    font-size: 18px;
+    color: #236cAD;
+    padding:10px 0;
+    max-width: 600px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.container .content .count-down{
+    display: flex;
+    justify-content: center;
+    padding:10px 0;
+    gap: 15px;
+}
+
+.container .content .count-down .box h3{
+    font-size: 55px;
+    background: #236cAD;
+    width:100%;
+    padding: 10px;
+    border-radius: 5px; 
+    color: #fff;
+}
+
+
+.container .content .count-down .box p{
+    font-size: 20px;
+    background: #236cAD;
+    padding: 5px 10px;
+    margin-top: 15%;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.container .content .btn{
+    display: inline-block;
+    padding:5px 55px;
+    background:#236cAD;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 200px;
+    border-radius:90px;
+    color:#fff;
+    font-family: 'Architects Daughter', cursive;
+    transition: .2s linear;
+}
+
+
+
+.container .content .btn:hover{
+    transform:scale(1.1);
+    /* filter: grayscale(30);
+    filter:brightness(2); */
+    filter:drop-shadow(10px);
+}
+.container span{
+    position: absolute;
+    top: -50px;
+    border-radius: 90%;
+    width: 2%;
+    height: 3%;
+    background:#fff;
+    filter: blur(3px);
+    animation: snowFall 5s linear  infinite; 
+}
+
+@keyframes snowFall {
+    100%{
+        transform:translateY(105vh)
+        scale(.4);
+    }
+}
