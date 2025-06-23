@@ -14,7 +14,7 @@ function createSnow(){
 setInterval(createSnow, 100);
 
 
-let date = new Date('jul 1, 2022 00:00:00').getTime();
+let date = new Date('jul 1, 2030 00:00:00').getTime();
 
 
 function countDown() {
